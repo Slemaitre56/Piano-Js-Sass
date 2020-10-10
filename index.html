@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href=".css/style.css">
+</head>
+<body>
+    <h1>Piano</h1>
+    <div class="clavier">
+       <div data-key="65" class=" key clavier__white">
+           <span  class="clavier__note">A(do)</span>
+           <span class="clavier__black"></span>
+        </div>
+        
+        <div data-key="90" class="clavier__white">
+            <span  class="clavier__note">Z(re)</span>
+            <span class="clavier__black "></span>
+        </div>
+        <div data-key="69" class="clavier__white">
+            <span  class="clavier__note">E(mi)</span> 
+        </div>
+        <div data-key="82" class="clavier__white">
+            <span  class="clavier__note">R(fa)</span> 
+            <span class="clavier__black"></span>
+        </div>
+        <div data-key="84" class="clavier__white">
+            <span  class="clavier__note">T(sol)</span> 
+            <span class="clavier__black"></span>
+        </div>
+        <div data-key="89" class="clavier__white">
+            <span  class="clavier__note">Y(la)</span>
+            <span class="clavier__black"></span> 
+        </div>
+        <div data-key="85" class="clavier__white">
+            <span  class="clavier__note">U(si)</span>
+        </div> 
+    </div>
+
+    <audio data-key="65" src="sounds/do.wav"></audio>
+    <audio data-key="90" src="sounds/re.wav"></audio>
+    <audio data-key="69" src="sounds/mi.wav"></audio>
+    <audio data-key="82" src="sounds/fa.wav"></audio>
+    <audio data-key="84" src="sounds/sol.m4a"></audio>
+    <audio data-key="89" src="sounds/la.wav"></audio>
+    <audio data-key="85" src="sounds/si.m4a"></audio>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+@mixin shadow {
+  box-shadow: 0px 5px 5px 0px rgba(82,76,82,0.73);
+  border-radius: 0 0 2px 2px;
+}
+
+body{
+  margin: 0 auto;
+  padding: 0;
+  width: 1200px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+  text-align: center;
+  margin: 50px;
+}
+.clavier {
+    margin: 50px auto;
+    width: 70%; 
+    display: flex;
+    justify-content: space-between;
+    &__white{
+      width: 115px;
+      height: 300px;
+      background: #f2f2ee;
+      border: 2px solid gray;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      transition: background 1s;
+      @include shadow;
+      
+}
+    &__black{
+      background-color: black;
+      width: 40px;
+      height: 170px;
+      position: absolute;
+      left: 100px;
+      top: -2px;
+      z-index: 99;
+      @include shadow;
+    }
+    &__note{
+      position: absolute;
+      bottom: 20px;
+    }
+    &__whitePlay{
+      background-color: #e1e1b9;
+      transform: scale(0.99);
+      -webkit-transform: scale(0.99);
+      -moz-transform: scale(0.99);
+      -ms-transform: scale(0.99);
+      -o-transform: scale(0.99);
+      z-index: 1;
+}
+  }
